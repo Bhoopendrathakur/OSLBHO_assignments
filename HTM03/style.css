@@ -1,0 +1,82 @@
+.newbox {
+    width: 1600pt;
+    height: 716pt;
+    display: flex;
+}
+
+.newbox1 {
+    width: 800pt;
+    height: 716pt;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box1 {
+    width: 265pt;
+    height: 195pt;
+    flex-basis: 40%;
+    margin-top: 70pt;
+    margin-left: 30pt;
+}
+
+.box2 {
+    width: 265pt;
+    height: 195pt;
+    flex-basis: 40%;
+    margin-top: 70pt;
+    margin-left: 30pt;
+}
+
+.box3 {
+    width: 265pt;
+    height: 195pt;
+    flex-basis: 40%;
+    margin-top: 70pt;
+    margin-left: 30pt;
+}
+
+.box4 {
+    width: 265pt;
+    height: 195pt;
+    flex-basis: 40%;
+    margin-top: 70pt;
+    margin-left: 30pt;
+}
+
+.newbox2 {
+    width: 800pt;
+    height: 716pt;
+}
+
+.box5 {
+    width: 443pt;
+    height: 180pt;
+    margin-top: 240pt;
+    margin-left: 40pt;
+}
+
+.dot {
+    height: 102.52pt;
+    width: 102.52pt;
+    background-color: rgba(219,82,82,0.5);
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+}
+
+.firsth1 {
+    font-size: 30pt;
+    padding: 45pt;
+}
+
+.secondh1 {
+    font-size: 30pt;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h5 {
+    color: blue;
+}
