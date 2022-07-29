@@ -1,0 +1,102 @@
+
+
+@font-face {
+    font-family: Proxima Nova ;
+    src: url("./Proxima\ Nova\ Font.otf");
+    
+}
+@font-face {
+    font-family:Light Italic ;
+    src: url(./Rene\ Bieder\ \ Milliard\ Light\ Italic.otf);
+}
+@font-face {
+    font-family: Bold;
+    src: url(./Rene\ Bieder\ \ Milliard\ Bold.otf);
+}
+div.main{
+    width: 1607px;
+    height: 770px;
+    background-color: #555F64;
+}
+div.head1{
+    position: absolute;
+    left: 177px;
+    top:105px;
+}
+.dot {
+  height: 102.5px;
+  width: 102.5px;
+  background-color:#E14B32;
+  border-radius: 50%;
+  display: inline-block;
+}			
+.firstline{
+    color: white;
+    position: relative;
+    bottom: 99px;
+    left:50px;
+    font-family:Bold;
+font-size: 43px;
+}
+.secondline{
+    color:#555F64;
+    position:relative;
+    left:49px;
+    bottom:99px;
+    -webkit-text-stroke-width:1px;
+    -webkit-text-stroke-color: white;
+    font-family:Bold;
+    font-size: 43px;
+    line-height: 0em;
+}
+div.subtitle{
+    position: absolute;
+    color: white;
+    left: 917px;
+    top: 284.62px;
+    width: 479px;
+    height: 145px;
+    font-family: Light Italic;
+    font-size: 19px;
+}
+div.subtitle2{
+    position: absolute;
+    color: white;
+    left: 917px;
+    top: 438px;
+    height: 20px;
+    width: 265px;
+    font-family: Bold;
+font-size: 14px;
+}
+div.image{
+    position: absolute;
+    height: 300px;
+    width: 565px;
+    top: 289.93px;
+    left: 220px;
+}
+div.group{
+    position: absolute;
+    height: 20px;
+    width:60px;
+    top: 509.93px;
+    left:917px;
+    font-family: Proxima Nova;
+    font-size: 17px;
+    color: rgb(186, 192, 197);
+}
+.Bold01{
+    font-family: Bold;
+    color: white;
+    font-size: 17px;
+}
+hr{
+  color:#E14B32;
+  width: 28.5%;
+  position: absolute;
+  left: 1085px;
+  top: 527.93px;
+  
+
+}
