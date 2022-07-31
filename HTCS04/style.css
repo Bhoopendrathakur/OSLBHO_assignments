@@ -1,0 +1,146 @@
+@font-face {
+    font-family: Bold;
+    src: url(./Rene\ Bieder\ \ Milliard\ Bold.otf);
+}
+
+@font-face {
+    font-family: Nova;
+    src: url(./Proxima\ Nova\ Font.otf);
+}
+.Dot {
+    height: 102.5px;
+    width: 102.5px;
+    background-color: #FAAF41;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 141.48px;
+    left: 196.22px;
+}
+.dot {
+  height: 40px;
+  width: 40px;
+  background-color:#3787C8;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  left: 505px;
+}
+.maingrid {
+    width: 1650px;
+    height: 1600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 381px 1fr 1fr 1fr;
+}
+.blogs {
+    font-family: Bold;
+    font-size: 48px;
+    position: relative;
+    left: 32px;
+    bottom: 15px;
+}
+.starter {
+    height: 341px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+.rect {
+    position: absolute;
+    left: 218px;
+    top: 289px;
+    border-radius: 18px;
+    border: 1px solid #3787C8;
+    width: 70px;
+    height: 36px;
+}
+.all {
+    font-family: Bold;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    bottom: 10px;
+}
+.text {
+    font-family: Nova;
+    font-size: 18px;
+    position: absolute;
+    top: 282px;
+    left: 367px;
+    word-spacing: 110px;
+}
+hr {
+    color: grey;
+    width: 75%;
+    position: relative;
+    top:331px;
+}
+.left{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-template-rows: 1fr 1fr;
+    width: 565px;
+    justify-content:center;
+    position: relative;
+    left: 217px;
+}
+.imgsize{
+    height: 300px; ;
+    width:565px;
+}
+.imgsize2{
+    height:140px;
+    width:265px;
+}
+
+.left1{
+    font-family: Bold;
+    font-size: 24px;
+    text-align: left;
+}
+.stat1{
+    font-family: Nova;
+    font-size: 16px;
+
+}
+.stat1:after {
+        content: "";
+        display: block;
+        width: 57px;
+        height: 2px;
+        background: #E14B32;
+        position: relative;
+        left:75px ;
+    bottom: 10px;
+}
+.rightgrid{
+    /* background-color: grey; */
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 465px;
+    position: relative;
+left: 100px;
+}
+.stat2{
+    font-family: Bold;
+    font-size: 24px;
+    text-align: left;}
+.triangle{
+      width: 0;
+      height: 0;
+      border-bottom: 40.1px solid #FAAF40;
+      border-right: 40.1px solid transparent;position: relative;
+      left: 385px;
+      bottom: 254px; }
+    
+       
+
+  
