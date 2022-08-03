@@ -1,0 +1,101 @@
+@font-face {
+    font-family: Nova;
+    src: url(./Proxima\ Nova\ Font.otf);
+}
+@font-face {
+    font-family: Bold;
+    src: url(./Rene\ Bieder\ \ Milliard\ Bold.otf);
+
+}
+@font-face {
+    font-family:Extra;
+    src: url(./Rene\ Bieder\ \ Milliard\ Heavy.otf);
+}
+.main{
+    width: 1600px;
+    height: 766px; 
+    /* background-color:yellow; */
+}
+h2{
+    font-family:Extra;
+    font-size: 18px;
+}
+p{
+    font-family: Nova;
+    font-size: 18px;
+}
+h1{
+    font-family: Bold;
+    font-size: 43px;
+}
+.Design1{
+width: 265px;
+height: 180px;
+position: absolute;
+left:176px ;
+top:176px ;
+}
+
+.Design2
+{
+    width: 265px;
+    height: 180px;
+    position:absolute;
+    left: 176px;
+    top: 416px;
+}
+.Design3{
+    width: 265px;
+    height: 180px;
+    position: absolute;
+    left:579px ;
+    top: 176px;
+
+}
+.Design4{
+    width: 265px;
+    height: 180px;position: absolute;
+    left:579px ;
+    top: 416px;
+}
+.circle {
+    height: 102.5px;
+    width: 102.5px;
+    background-color:#E14B32;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .Design5{
+    width: 550px;
+    height: 200px;
+    position: absolute;
+    top: 283px;
+    left: 983px;
+  }
+  .text{
+    position: relative;
+    bottom: 104px;
+    left: 30px;
+
+  }
+  .line2{
+    position: relative;
+    bottom: 28px;
+    -webkit-text-fill-color: white; 
+    -webkit-text-stroke-color:#707070;
+    -webkit-text-stroke-width: 1px;
+  }
+  .line3{
+    color: #3787C8;
+    font-family: Bold;
+    font-size: 14px;
+    position: relative;
+    bottom: 28px;
+  }
+  .img1{
+    position: relative;
+right: 13px;  }
+  .img2{
+    position: relative;
+    right:16px;
+  }
