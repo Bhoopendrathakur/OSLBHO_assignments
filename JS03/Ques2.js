@@ -1,3 +1,4 @@
+// Product of an array using recursion
 function productOfArray(ar){
     if(ar.length<1){
         return false;
@@ -18,3 +19,8 @@ let sixHundred= productOfArray([1,2,3,10,10]);
 console.log(six);
 console.log(sixty);
 console.log(sixHundred);
+
+//OUTPUT
+// 6
+// 60
+// 600
