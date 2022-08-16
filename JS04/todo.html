@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./todo.css">
+    <title>JS04</title>
+</head>
+<body>
+    <div class="todo">
+        <div class="container">
+            <h1 class="todoitem">To do Items</h1>   <div class="input1">
+            <input type="text" class="additem" placeholder="add a todo" id="todoinput">
+            <input type="hidden" id="editindex">
+            <button class="submit" id="submitbtn">Submit</button>
+            <button class="edit" id="editbtn" style="display:none;" >Edit</button></div>
+            <div class="output">
+                <table id="addeditemlist"></table>
+                <button class="clear" id="clearbtn" style="display:none;">Clear Items</button>
+            </div>
+        </div>
+    </div>
+    <script src="./todo.js"></script>
+</body>
+</html>
