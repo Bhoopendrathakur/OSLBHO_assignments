@@ -1,10 +1,22 @@
 <?php
+$server = "localhost";
+$user= "root";
+$password = "Admin@123";
+$db = "Registration_form";
 
-$db_user="root";
-$db_pass ="Admin@123";
-$db_name = "Registration_form";
+$con = mysqli_connect($server,$user,$password,$db);
+if ($con){
+    ?>
+    <script>
+        alert("connection succesful");
+    </script>
 
-$db = new PDO('mysql:host=localhost;dbname='.$db_name.';charset=utf8', $db_user,$db_pass);
-$db ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
+    <?php
+}else{
+    ?>
+    <script>
+        alert("not connected");
+    </script>
+    <?php
+}
 ?>

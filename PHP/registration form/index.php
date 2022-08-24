@@ -1,7 +1,4 @@
 <?php
-require_once('connect.php');
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,28 +13,56 @@ require_once('connect.php');
 </head>
 <body>
     <?php
+     include 'connect.php';
+
      if (isset($_POST['join'])){
-        $username = $_POST['username'];
-        $email = $_POST['email'];
-        $dob = $_POST['dob'];
-        $phone = $_POST['phone'];
-        $sql = "INSERT INTO users(username,email,dob,phone) VALUES(?,?,?,?)";
-        $stmtinsert = $db->prepare($sql);
-        $result = $stmtinsert->execute([$username,$email,$dob,$phone]);
-        if($result){
-            echo 'Successfully saved.';
-        }else{
-            echo 'there was some error while saving the data.';
+        $username = mysqli_real_escape_string($con,$_POST['username']);
+        $email = mysqli_real_escape_string($con,$_POST['email']);
+        $dob = mysqli_real_escape_string($con,$_POST['dob']);
+        $phone = mysqli_real_escape_string($con,$_POST['phone']);
+
+        
+      
+    //     $emailquery = SELECT * FROM users where email='$email'";
+    //     $query = mysqli_query($con,$emailquery);
+    //     $emailcount = mysqli_num_row($query);
+
+    //   if ($emailcount>0){
+    //     echo "email already exist";
+    //   }
+    //   else{
+        $insertquery ="INSERT INTO users VALUES('$username','$email','$dob','$phone')";
+        $iquery = mysqli_query($con,$insertquery);
+            if ($iquery){
+                // echo $username.$email.$dob.$phone;
+            ?>
+            <script>
+                alert("insert succesful");
+            </script>
+        
+            <?php
+            }
+            else{
+            ?>
+            <script>
+                alert("not inserted successfully");
+            </script> 
+            <?php
+            }
+            
         }
-     }
+
+     
 
     ?> 
+
+
     <div class="main">
         <div class="container">
             <h1 class="dev">DEV COMMUNITY</h1>
             <div class="form-control">
             <h2>Join Our developer community</h2>
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
+            <form action="#" method="POST">
             <input type="text" name="username" placeholder="FULL NAME"><br>
             <input type="email" name="email" id="" placeholder="Email"><br>
             <input type="tel" name="phone" id="" placeholder="Phone Number"><br>
