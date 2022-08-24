@@ -26,19 +26,29 @@ if( isset($_POST['save'])){
 }
 
 
+//delete data
+if (isset($_GET['del'])){
+    $id = $_GET['del'];
+    mysqli_query($db,"DELETE FROM info WHERE id=$id");
+    header('location: index.php');
+
+}
+
 //retrieve data from database
 $result = mysqli_query($db,"SELECT * FROM info");
 
 //UPDATE DATA
 if (isset($_POST['update'])){
-    $firstname = mysql_real_escape_string($_POST['firstname']);
-    $lastname = mysql_real_escape_string($_POST['lastname']);
-    $email = mysql_real_escape_string($_POST['email']);
-    $dob = mysql_real_escape_string($_POST['dob']);
-    $nationality = mysql_real_escape_string($_POST['nationality']);
-    $id = mysql_real_escape_string($_POST['id']);
+    $firstname = $_POST['firstname'];
+    $lastname = $_POST['lastname'];
+    $email = $_POST['email'];
+    $dob = $_POST['dob'];
+    $id = $_POST['id'];
+    $nationality = $_POST['nationality'];
     
-
+    mysqli_query($db,"UPDATE info SET firstname='$firstname', lastname='$lastname', email='$email', dob='$dob', nationality='$nationality' WHERE id=$id ");
+    header('location:index.php'); 
+    
 }
 
 

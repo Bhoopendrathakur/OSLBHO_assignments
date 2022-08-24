@@ -1,29 +1,41 @@
-<?php include('connect.php'); 
+<?php 
+include('connect.php'); 
 
 //fetching the data to update 
 if(isset($_GET['edit'])){
     $id = $_GET['edit'];
+    $edit_state = true;
     $rec = mysqli_query($db,"SELECT * FROM info WHERE id=$id");
     $record = mysqli_fetch_array($rec);
-    $firstname = $record
-
+    $firstname = $record['firstname'];
+    $lastname = $record['lastname'];
+    $email = $record['email'];
+    $dob = $record['dob'];
+    $nationality = $record['nationality'];
+    $id = $record['id'];
 }
-
-
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+     
+        <?php 
+        include 'style.php'
+        ?>
+        
+    
     <title>CRUD operation</title>
 </head>
 <body>
+
+
     <div class="main">
-        <h1>DEV COMMUNITY</h1>
+        <div class="dev">
+        <h1>DEV COMMUNITY</h1></div>
         <div class="outputbox">
             <table>
                 <h2><b>CUSTOMER DATA LIST</b></h2>
@@ -45,7 +57,7 @@ if(isset($_GET['edit'])){
                             <td> <?php echo $row['email'];?></td>
                             <td><?php echo $row['dob'];?></td>
                             <td><?php echo $row['nationality'];?></td>
-                         <td><a href="index.php?edit=<?php echo $row['id']; ?>">Edit</a><a href="#">Delete</a></td>
+                         <td><pre>   <a href="index.php?edit=<?php echo $row['id']; ?>"><img src="edit.png" alt="" height="30px"></a><a href="connect.php?del=<?php echo $row['id']; ?>">  <img src="delete.png" alt="" height="30px"></a>   </pre></td>
                         </tr>
                      <?php } ?>
                   
@@ -62,20 +74,20 @@ if(isset($_GET['edit'])){
                 <div>
                 <input name="firstname" type="text" value="<?php echo $firstname; ?>" placeholder="FIRST NAME">
                 <input name="lastname" type="text" value="<?php echo $lastname; ?>" placeholder="LAST NAME"></div>
-              <div>  <input name="email" type="text" value="<?php echo $email; ?>" placeholder="EMAIL">
-                <input name="dob" type="text" value="<?php echo $dob; ?>" placeholder="DATE OF BIRTH"></div>
+              <div>  <input name="email" type="email" value="<?php echo $email; ?>" placeholder="EMAIL">
+                <input name="dob" onfocus="this.type='date'" value="<?php echo $dob; ?>" placeholder="DATE OF BIRTH"></div>
                <div> <input name="nationality" type="text" value="<?php echo $nationality; ?>" placeholder="NATIONALITY"></div>
                <div>
                 <?php if ($edit_state == false): ?>
                      <button name="save" type="submit" id="submitbtn">ADD TO LIST</button>
                 <?php else: ?>
-                    <button name="UPDATE" type="submit" id="submitbtn">UPDATE</button>
-                <?php ?>     
+                    <button name="update" type="submit" id="submitbtn">UPDATE</button>
+                <?php endif ?>     
                </div>
             </form>
 
         </div>
+        <hr>
     </div>
-    
 </body>
-</html>
+</html> 
