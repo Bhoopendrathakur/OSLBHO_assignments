@@ -11,7 +11,7 @@
 
 .main{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1000px 1fr;
     grid-template-rows: 100px 700px;
     /* background-color: grey; */
     width:1640px;
@@ -28,16 +28,8 @@
     padding-left: 100px;
     background-color: black;
  }
- .outputbox{
-    display: grid;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    justify-items: center;
-    align-content: center;
- }
- .inputbox{
+ 
+.inputbox{
     display: grid;
     grid-column-start: 1;
     grid-column-end: 2;
@@ -65,7 +57,20 @@ input{
     width: 240px;
     font-size:18px;
 }
+#genderbox{ border: 3px solid;
+    border-color: rgb(143, 201, 201);
+    height:44px;
+    width: 240px;
+    font-size:18px;
 
+}
+#uploadbox{ border: 3px solid;
+    border-color: rgb(143, 201, 201);
+    height:44px;
+    width: 240px;
+    font-size:18px;
+
+}
 #submitbtn{
     height: 50px;
     width: 163px;

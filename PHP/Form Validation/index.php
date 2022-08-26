@@ -26,7 +26,7 @@
              <div>
                     <input type="text" name="username" placeholder='USERNAME'>
                     <span class="error">* <?php echo $usernameError;?></span>
-                    <select name="gender" >
+                    <select id="genderbox" name="gender" >
                     <option value="" disabled selected>SELECT GENDER</option>
                         <option name="gender" value="MALE">MALE</option>
                         <option name="gender" value="FEMALE">FEMALE</option>
@@ -45,7 +45,7 @@
                <span class="error">* <?php echo $nationalityError;?></span>
             </div>
             <div>
-                <label for="">PROFILE IMAGE  </label><input type="file" id="img" name="img" accept="image/*"  placeholder="">
+                <label  for="">PROFILE IMAGE  </label><input id="uploadbox" type="file" id="img" name="img" accept="image/*"  placeholder="">
             </div>
             <div>
                      <button name="save" type="submit" id="submitbtn">SUBMIT</button>    
